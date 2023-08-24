@@ -1,0 +1,61 @@
+/* CryptoWalletPage.css */
+
+/* Center the CryptoWallet content vertically and horizontally */
+.crypto-wallet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% of the viewport height */
+    background-color: rgb(0, 33, 36);
+    background: linear-gradient(90deg, rgba(0, 33, 36, 1) 0%, rgba(9, 121, 107, 0.8716736694677871) 41%, rgba(0, 212, 255, 1) 95%);
+    color: white;
+  }
+  
+  /* Style the balance display */
+  .balance-display {
+    font-family: 'Bahnschrift SemiLight', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the deposit and withdrawal form */
+  .deposit-withdraw-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the form inputs */
+  .form-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black; /* Set text color to black */
+    font-family: 'Bahnschrift SemiLight', sans-serif;
+    font-size: 20px; /* Set font size to 20px */
+    font-weight: bold; /* Make text bold */
+  }
+  
+  /* Style the form buttons */
+  .form-button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: white; /* Set button background to white */
+    color: black; /* Set button text color to black */
+    font-family: 'Bahnschrift SemiLight', sans-serif;
+    font-size: 20px; /* Set font size to 20px */
+    font-weight: bold; /* Make button text bold */
+    cursor: pointer;
+  }

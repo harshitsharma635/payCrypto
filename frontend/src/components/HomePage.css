@@ -1,0 +1,54 @@
+/* HomePage.css */
+.home-container {
+  text-align: center;
+  background: rgb(0, 33, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 33, 36, 1) 0%,
+    rgba(9, 121, 107, 0.8716736694677871) 41%,
+    rgba(0, 212, 255, 1) 95%
+  );
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  font-size: 36px;
+  font-family: "Bahnschrift SemiLight", sans-serif;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 20px;
+  font-family: "Bahnschrift SemiLight", sans-serif;
+  margin-bottom: 20px;
+}
+
+.home-options {
+  list-style: none;
+  padding: 0;
+}
+
+.home-button {
+  font-size: 20px;
+  font-family: "Bahnschrift SemiLight", sans-serif;
+  font-weight: bold; /* Make the text bold */
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+  color: white; /* Change the text color on hover */
+}
