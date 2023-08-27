@@ -57,5 +57,5 @@ let userSchema = new mongoose.Schema({
 //     this.confirmPassword = confirmPassword;
 // }
 
-let userModel = mongoose.model("Users" , userSchema);
+let userModel = mongoose.model("user" , userSchema);
 module.exports = userModel;

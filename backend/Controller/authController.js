@@ -6,6 +6,7 @@ const nodemailer = require("nodemailer");
 async function signup(req , res){
     try {
         let newUser = req.body;
+        console.log(newUser);
         let user = await userModel.create({
             name : newUser.name,
             email : newUser.email,
@@ -28,8 +29,10 @@ async function login(req , res){
     try {
         let {email , password} = req.body;
         let loggedinUser = await userModel.find({email});
+        //console.log(loggedinUser);
         if (loggedinUser.length) {
             let user = loggedinUser[0];
+            console.log(user);
             if(user.password == password){
                 const token = jwt.sign({ id : user["_id"]} , SECRET_KEY);
                 res.cookie("jwt" , token , {httpOnly : true});
